@@ -4,8 +4,8 @@ const querystring = require('querystring');
 class paypalConnectionWithAxios {
     constructor() {
         this.base_url = "https://api.sandbox.paypal.com";
-        const client_id = "AVX_6t8YvMshTubbzstnkRzmht_t36OZebb3YsMonTjPTORyx87SdEWgyI10k3y6WGLdJpW1UkuxDwFW";
-        const secret_key = "EOLQBtCw_PkNFjPISk3SHCaTqCWJpX7RWVwZzD2Z65NBSXvV4-nSfAqAyJ0fidShOf6WcmF4I5tQYeD1";
+        const client_id = "CLIENT_ID";
+        const secret_key = "SECRET_KEY";
         const auth = client_id + ":" + secret_key;
         this.authb = "Basic " + new Buffer(auth).toString("base64");
 
